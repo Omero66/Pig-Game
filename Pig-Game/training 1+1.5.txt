@@ -1,0 +1,703 @@
+/*
+var firstName = 'Alex';
+console.log(firstName)
+
+var lastName = ('Baldwin');
+var age = 30;
+
+var fullAge = true;
+console.log(fullAge);
+
+var job;
+console.log(job);
+
+job = 'Teacher';
+console.log(job)
+*/
+var firstName = 'Alex';
+var age = 30;
+
+console.log(firstName+' '+age);
+
+var job, isMarried
+//job = 'Teacher';
+//isMarried = false;
+
+
+//variable mutation
+//age = 'thirty';
+job = 'driver';
+
+//alert(firstName + ' is a ' + age + ' year old ' + job +'.is he married '+isMarried);
+
+var lastName = prompt('what is his last name');
+console.log(firstName+' '+lastName);
+
+//basic operators
+//math operator
+
+
+var year = 2018 ;
+var ageAlex = 2018 - 30;
+var ageRajon = 2018 - 35;
+
+console.log(ageAlex + ' ' + ageRajon);
+
+//logical operator
+var alexOlder = ageAlex > ageRajon;
+console.log(alexOlder);
+
+//typeof operator
+console.log(typeof alexOlder);
+console.log(typeof ageAlex);
+console.log (typeof 'Rajon is older the alex')
+/*var x;
+console.log (typeof x);*/
+
+//operator precedense
+
+var now = 2018;
+var yearAlex = 1989;
+var fullAge = 18;
+
+var isFullAge = now - yearAlex >= fullAge;
+console.log(isFullAge);
+
+var ageAlex = now - yearAlex;
+var ageRajon = 35;
+var average = (ageAlex + ageRajon) / 2;
+console.log(average);
+
+
+//multipie assignments
+var x, y;
+x = y = (3 + 5)* 4 - 6;//8 * 4 - 6// 32- 6  //26
+console.log(x, y);
+
+//more operators
+x = x * 2;
+x *= 2
+console.log(x);
+x += 10;
+console.log(x);
+
+
+
+
+var massRajon = 78; //kg
+var heightRajon = 1.69; //meters
+
+var massAlex = 92;
+var heightAlex = 1.95;
+
+varBMIRajon = massRajon / (heightRajon * heightRajon);
+var BMIAlex = massAlex / (heightAlex * heightAlex);
+console.log(varBMIRajon,BMIAlex);
+
+var RajonHigherBMI= varBMIRajon > BMIAlex;
+console.log('is marksBMI higher than johns '+RajonHigherBMI);
+
+
+
+
+var firstName = 'Alex';
+var civilStatus = 'single';
+
+if (civilStatus === 'married'){
+    console.log(firstName+'is married');
+}else {
+    console.log(firstName + ' will hopefuly marry soon ');
+
+}
+//var isMarried = true;
+if (isMarried) {
+    console.log(firstName+ ' is married ');
+} else {
+    console.log(firstName + ' will hopefuly marry soon ');
+}
+
+
+
+
+
+
+
+
+
+var massRajon = 78; //kg
+var heightRajon = 1.69; //meters
+
+var massAlex = 92;
+var heightAlex = 1.95;
+
+varBMIRajon = massRajon / (heightRajon * heightRajon);
+var BMIAlex = massAlex / (heightAlex * heightAlex);
+if (varBMIRajon > BMIAlex){
+    console.log ('Rajon BMI is higher then John');
+}else{
+    console.log ('Alex BMI is higher then rajon')
+}
+
+//console.log(varBMIRajon,BMIAlex);
+
+//var RajonHigherBMI= varBMIRajon > BMIAlex;
+//console.log('is marksBMI higher than johns '+RajonHigherBMI);
+
+
+//boolean logic
+
+
+var firstName = 'Alex';
+//var age = 16;
+
+/*if (age < 13) {
+    console.log(firstName + 'is a boy');
+} else if (age >= 13 && age < 20) {
+    console.log(firstName + 'is a teenager');
+} else if (age > 20 && age < 30){
+    console.log(firstName + 'is a young man') 
+} else {
+    console.log(firstName + 'is a man');
+}
+*/
+var firstName = 'Alex';
+var age = 16;
+
+age >= 18 ? console.log (firstName +'drinks beer')
+: console.log(firstName + 'drinks juice');
+
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log (drink);
+
+/*if (age >= 18){
+    var drink = 'beer';
+} else {
+    var drink = 'juice';
+}
+*/
+
+var job = 'instructor';
+switch (job) {
+case 'teacher':
+case 'instructor':        
+    console.log(firstName + ' teacher kids how to code ');
+    break;
+case 'driver':
+        console.log(firstName + ' drives a gett car in lisbon ');
+    break;
+case 'designer':
+        console.log (firstName + ' designs beautiful ');
+    break;
+default:
+        console.log(firstName + ' does somethink else ');
+}
+
+
+
+age = 23n ;
+switch (true){
+    case age < 13:
+        console.log(firstName +'is a boy');
+        break;
+    case age >= 13 && age < 20:
+        console.log(firstName + 'is a teenager');
+        break;
+    case age >= 20 && age < 30:
+        console.log(firstName + 'is a young man');
+        break;
+    default:
+        console.log(firstName + 'is a man');
+}
+
+
+
+
+var height; 
+ 
+height = 23;
+
+if (height || height === 0){
+    console.log('variable is defined')
+}else{
+    console.log('variable hasnt been defined');
+}
+
+
+
+var scoreAlex = (89 + 120 + 103) /3;
+var scoreRajon = (116 + 94 + 123) / 3;
+var scoreMary = (97 + 134 + 105) /3;
+console.log(scoreAlex, scoreRajon,scoreMary)
+
+if (scoreAlex > scoreRajon && scoreAlex > scoreMary)
+{
+    console.log('alex team wins with' + scoreAlex + 'points' );
+} else if (scoreRajon > scoreAlex && scoreRajon > scoreMary) {
+    console.log('rajons team wins with' + scoreRajon + 'points');
+
+}else if (scoreMary > scoreAlex && scoreMary > scoreRajon){
+console.log('marrys team wins with ' + scoreMary + 'points');
+}else {
+    console.log('there is a draw');
+}
+
+
+
+/*if (scoreAlex > scoreRajon){
+    console.log ('Alex team wins with' + scoreAlex +'points');
+}else if (scoreRajon > scoreAlex){
+    console.log(' rajons team wins with '+ scoreRajon + 'points');
+}else {
+        console.log('there is a draw');
+}*/
+
+
+
+
+
+
+
+
+
+
+//functions
+
+
+function calculateAge(birthYear){
+    return 2018 - birthYear;
+}
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
+
+console.log(ageJohn, ageMike, ageJane);
+
+function yearsUntillRetirement(Year , firstName){
+    var age = calculateAge(Year);
+    var retirement = 65 - age;
+   
+    if (retirement > 0){
+        console.log(firstName + 'retires in'+ retirement + 'years');
+
+    }else {
+        console.log(firstName + 'is already retired');
+    }
+   
+   
+}
+yearsUntillRetirement(1990, 'John');
+yearsUntillRetirement(1948, 'Mike');
+yearsUntillRetirement(1969, 'Jane');
+
+//function statemes and expressions
+
+//function declaration
+/*function whatDoYouDo(job, firstName){
+
+}
+*/
+
+
+
+//function expression
+var whatDoYouDo = function(job , firstName){
+    switch(job){
+        case 'teacher':
+        return firstName + 'teaches kids how to code';
+        case 'driver' :
+        return firstName + 'driver a cab in lisbon'
+        case 'designer':
+        return firstName + 'design beautiful websites';
+        default:
+        return firstName + 'does something else';
+
+    }
+}
+console.log(whatDoYouDo('teacher' , 'john'));
+console.log(whatDoYouDo('designer' , 'jane'));
+console.log(whatDoYouDo('retired' , 'mark'));
+
+
+//arrays
+
+var names = ['john','mark' ,'jane'];
+var years = new Array(1990, 1969 , 1948)
+
+console.log(names);
+console.log(names.length);
+
+names[1] = 'Ben'
+names[3] = 'Mary'
+name[names.length] = 'Mary';
+console.log(names);
+
+//diffrent data types
+
+
+
+
+
+
+
+var john = ['John' , 'Smith' , 1990 , 'designer',
+false];
+john.push('blue');
+john.unshift('Mr.')
+
+john.pop()
+john.pop()
+john.shift()
+
+console.log(john)
+console.log(john.indexOf(1990))
+var isDesigner = john.indexOf('designer') === -1 ? 'john is not a designer ': 'john is a designer';
+console.log (isDesigner);
+
+
+
+function tipCalculatior(bill){
+    var percentage;
+    if (bill < 50){
+        percentage = .2;
+    }else if (bill >= 50 && bill < 200){
+            percentage = .15;
+    }else{
+            percentage = .1;
+    }
+    return percentage * bill
+}
+//console.log(tipCalculatior(10));
+
+
+var bills = [124 , 48 , 268];
+var tips =[tipCalculatior(bills[0]),
+        tipCalculatior(bills[1]),
+        tipCalculatior(bills[2])];
+var finalValues = [bills[0] + tips [0],
+                bills[1] + tips [1],
+                bills[2] + tips [2]];
+
+
+
+ console.log(tips , finalValues);
+
+
+
+
+
+ //objects and properties
+/*
+
+ var john = {
+     firstName:'john',
+     lastName: 'Smith',
+     birthYear: 1990,
+     family: ['Jamie', 'Mark', 'Bob', 'Emily'],
+     job: 'teacher',
+     isMarried: false
+};
+console.log(john.firstName);
+console.log(john);
+var y = 'birthYear';
+console.log(john['lastName']);
+console.log(john[y]);
+
+john.job = 'driver';
+john['isMarried'] = true
+console.log(john)
+
+var jamie = new Object();
+jamie.name = 'jamie';
+jamie.birthYear = 1969;
+jamie['lastName'] = 'Smith';
+console.log(jamie)
+
+
+
+//objects and methods
+//methods
+
+var john = {
+    firstName:'john',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jamie', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function(birthYear){
+    this.age = 2018 - this.birthYear;
+
+    }
+};
+var Mark = {
+    firstName:'Mark',
+    lastName: 'Miller',
+    birthYear: 1990,
+    family: ['Jamie', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function(birthYear){
+    this.age = 2018 - this.birthYear;
+    
+
+john.calcAge();
+console.log(john);
+
+
+
+var John = {
+    fullName:'John Smith',
+    mass:92,
+    height:1.95,
+    calcBMI: function(){
+       this.bmi = this.mass / (this.height * this.height)
+    return this.bmi;
+    }
+}
+var Mark = {
+    fullName:'Mark Miller',
+    mass:78,
+    height:1.69,
+    calcBMI: function(){
+       this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+    }
+}
+
+John.calcBMI();
+Mark.calcBMI();
+console.log(John , Mark);
+
+
+
+
+if (john.calcBMI() > mark.calcBMI()){
+    console.log(john.fullName + 'has a higher BMI of '+ john.bmi)
+}else if (mark.bmi > john.bmi) {
+    console.log(mark.fullName + 'has a higher BMI of ' + mark.bmi);
+} else {
+    console.log('they have the same BMI');
+*/
+
+
+
+
+//loop and iteration
+
+for (var i = 1; i < 20; i += 2){
+    console.log(i);
+}
+// i = 0 , 0 < 10 true , log i to console ,i++
+//i = 1, 1 < 10 true , log i to the console , i++
+//...
+//i = 9, 9 < true log i to the console i++
+//i = 10 , 10 < 10 FALSE , exit the loop!
+
+
+var john = ['John' , 'Smith', 1990, 'designer', false,'blue'];
+for (var i = 0; i < john.length; i++){
+    console.log(john[i]);
+}
+
+
+var i = 0
+while(i < john.length){
+    console.log(john[i]);
+    i++;
+}
+
+
+//continue and break statements
+
+var john = ['John' , 'Smith', 1990, 'designer', false,'blue'];
+for (var i = 0; i < john.length; i++){
+    if(typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
+
+for (var i = 0; i < john.length; i++){
+    if(typeof john[i] !== 'string') break;
+    console.log(john[i]);
+}
+
+
+//looping backwards
+
+for (var i = john.length - 1; i >= 0; i-- ){
+    console.log(john[i]);
+}
+
+
+var john ={
+    fullName: 'John Smith',
+    bills: [124 ,48 ,268 ,180 ,42],
+    calcTips: function(){
+        this.tips = [];
+        this.finalValues = [];
+        
+        for (var i = 0; i < this.bills.length; i++)
+        {
+            
+            //determine percentage based on tippins rules
+            var percentage;
+            var bill = this.bills[i];
+            
+            
+            
+            if (bill < 50){
+                percentage = .2;
+
+            } else if (bill >= 50 && this.bill< 200) {
+                    percentage = .15;
+            } else {
+                    percentage = .1;
+            }
+
+
+                //add results to the corresponing
+                this.tips[i] = bills * percentage
+                this.finalValues[i] = bill= + bill * percentage;
+
+        }
+    }
+}
+john.calcTips();
+console.log(john);
+
+
+
+var mark ={
+    fullName: 'Mark Miller',
+    bills: [77 ,475 ,110 ,45 ],
+    calcTips: function(){
+        this.tips = [];
+        this.finalValues = [];
+        
+        for (var i = 0; i < this.bills.length; i++)
+        {
+            
+            //determine percentage based on tippins rules
+            var percentage;
+            var bill = this.bills[i];
+            
+            
+            
+            if (bill < 100){
+                percentage = .2;
+
+            } else if (bill >= 100 && this.bill< 300) {
+                    percentage = .1;
+            } else {
+                    percentage = .25;
+            }
+
+
+                //add results to the corresponing
+                this.tips[i] = bills * percentage
+                this.finalValues[i] = bill= + bill * percentage;
+
+        }
+    }
+}
+
+function calcAverage(tips){
+    var sum = 0;
+    for (var i = 0; i < tips.length; i++){
+        sum = sum + tips[i];
+
+    }
+    return sum / tips.length;
+}
+
+
+
+//do the calculations
+mark.calcTips();
+john.calcTips();
+console.log(mark, john);
+
+john.average = calcAverage(john.tips);
+mark.average = calcAverage(mark.tips);
+console.log(john , mark);
+
+if (john.average > mark.average){
+    console.log (john.fullName + '\'s family pays higher tips with an average of $' + john.average);
+} else if (mark.average > john.average){
+    console.log(mark.fullName + '\'s family pays higher tips with an average of $' + mark.average)
+
+}
+
+
+
+calculateAge(1965);
+
+function calculateAge(year){
+    console.log(2016 - year);
+
+}
+//retirement(1956);
+
+
+
+var retirement = function(year){
+    console.log(65- (2016 - year));
+}  
+retirement(1990);
+
+
+
+//variables
+
+var age = 23;
+console.log(age);
+
+function foo() {
+    var age = 65;
+    console.log(age);
+
+}
+foo();
+console.log(age);
+
+
+//the this keyword
+
+//console.log(this);
+
+calculateAge(1985);
+
+function calculateAge(year){
+console.log(2016 - year);
+console.log(this);
+
+}
+
+var john = {
+    name: 'John',
+    yearOfBirth: 1990,
+    calculateAge: function(){
+        console.log(this);
+        console.log(2016 - this.yearOfBirth)
+
+        function innerfunction(){
+            console.log(this);
+
+        }
+        innerfunction();
+
+    }
+}
+
+john.calculateAge();
+
+
+
+var mike = {
+    name: 'Mike',
+    yearOfBirth: 1984
+
+};
+
+mike.calculateAge = john.calculateAge;
+mike.calculateAge();
+console.log(mike);
